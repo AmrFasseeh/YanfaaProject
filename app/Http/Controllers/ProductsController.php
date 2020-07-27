@@ -57,6 +57,10 @@ class ProductsController extends Controller
         $cart = new Cart($oldCart);
         $cart->removeItem($product, $product->id);
         $request->session()->put('cart', $cart);
+        // dd();
+        if($cart->items == null){
+            $request->session()->forget('cart');
+        }
         return redirect()->back();
     }
 
@@ -69,6 +73,9 @@ class ProductsController extends Controller
         $cart = new Cart($oldCart);
         $cart->removeAllItems($product, $product->id);
         $request->session()->put('cart', $cart);
+        if($cart->items == null){
+            $request->session()->forget('cart');
+        }
         return redirect()->back();
     }
 

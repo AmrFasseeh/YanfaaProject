@@ -4,6 +4,11 @@ User Orders
 @endsection
 @section('content')
 <div class="row">
+    <div class="col-md-6 col-sm-6 mt-4 mb-4">
+        <h2>Your Orders</h2>
+    </div>
+</div>
+<div class="row">
     <div class="col-md-12 col-sm-12 col-md-offset-4 col-sm-offset-3 mt-4">
         <ul class="list-group">
             <table class="table">

@@ -1,7 +1,9 @@
-/* .card-title{
-    font-size: 30px;
-} */
-.price {
+.blue{
+    background-color: #2196f3;
+}
+.white {
+    color: white;
+}
+.bold {
     font-weight: bold;
-    font-size: large;
 }

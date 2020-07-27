@@ -14,7 +14,7 @@
     @include('partials.menu')
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 @if (session('message'))
                 <div class="alert alert-success mt-2" role="alert">
                     {{ session('message') }}

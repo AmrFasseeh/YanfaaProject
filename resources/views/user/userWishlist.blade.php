@@ -3,9 +3,15 @@
 Wishlist
 @endsection
 @section('content')
+<div class="row">
+    <div class="col-md-6 col-sm-6 mt-4 mb-4">
+        <h2>Wishlist</h2>
+    </div>
+</div>
 @if (!(Auth::user()->wishlist->count() == 0))
 <div class="row">
     <div class="col-md-6 col-sm-6 mt-4 mb-4">
+        <h2>Wishlist</h2>
         <a href="{{ route('wishlist.Empty') }}" class="btn btn-danger">Empty Wishlist!</a>
     </div>
 </div>

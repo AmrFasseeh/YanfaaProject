@@ -3,6 +3,11 @@
 Shopping Cart
 @endsection
 @section('content')
+<div class="row">
+    <div class="col-md-6 col-sm-6 mt-4 mb-4">
+        <h2>Shopping Cart</h2>
+    </div>
+</div>
 @if (Session::has('cart'))
 <div class="row">
     <div class="col-md-6 col-sm-6 mt-4 mb-4">

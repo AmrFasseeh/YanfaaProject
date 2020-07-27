@@ -12,7 +12,7 @@ Our Products
 <div class="row">
   @foreach ($products as $product)
   @if ($product->product_type == 1)
-  <div class="col-4 mt-4">
+  <div class="col-md-4 col-sm-6 mt-4">
     <div class="card" style="width: 18rem;">
       <img src="{{ $product->imagePath }}" class="card-img-top" alt="...">
       <div class="card-body">
@@ -25,7 +25,7 @@ Our Products
     </div>
   </div>
   @else
-  <div class="col-4 mt-4">
+  <div class="col-md-4 col-sm-6 mt-4">
     <div class="card" style="width: 18rem;">
       <img src="{{ $product->imagePath }}" class="card-img-top" alt="...">
       <div class="card-body">
